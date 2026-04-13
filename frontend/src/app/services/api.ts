@@ -5,7 +5,7 @@ class APIService {
   private api: AxiosInstance;
 
   constructor() {
-    const baseURL = (import.meta as any).env?.VITE_API_BASE_URL || 'https://mock-interview-ai-backend-x657.onrender.com';
+    const baseURL = (import.meta as any).env?.VITE_API_BASE_URL || 'https://mock-interview-ai-backend-x657.onrender.com/api';
     this.api = axios.create({
       baseURL,
       timeout: 60000, // 60 seconds for interview creation (question generation can take time)
